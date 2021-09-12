@@ -7,3 +7,8 @@ This repo contains  the commands that i need to use in future.
  ```
 cat file.txt | xargs -n 1 -d'\n' -I {} mv ./source/{} target/
  ```
+ 
+ # check service status in ubuntu
+ ```
+ systemctl status service-name
+ ```
