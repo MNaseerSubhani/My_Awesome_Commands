@@ -12,3 +12,13 @@ cat file.txt | xargs -n 1 -d'\n' -I {} mv ./source/{} target/
  ```
  systemctl status service-name
  ```
+
+# For Documentatiomn
+```
+sudo apt install python-sphinx -y
+tree -L 3                              #for directory tree
+sphinix-quickstart
+sphinx-apidoc -o . ..
+make html                              # to convert in html format
+sudo pip install sphinx_rtd_theme
+```
