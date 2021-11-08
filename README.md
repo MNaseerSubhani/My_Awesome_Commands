@@ -22,7 +22,7 @@ sphinx-apidoc -o . ..
 make html                              # to convert in html format
 sudo pip install sphinx_rtd_theme
 ```
-# pyTorch with docker 
+# pyTorch and tf with docker 
 ```
 FROM nvcr.io/nvidia/l4t-pytorch:r32.6.1-pth1.9-py3   or NVIDIA L4T ML
 
