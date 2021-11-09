@@ -27,5 +27,6 @@ sudo pip install sphinx_rtd_theme
 FROM nvcr.io/nvidia/l4t-pytorch:r32.6.1-pth1.9-py3   or NVIDIA L4T ML
 
 sudo docker build -t "container name"
+xhost local:root      # to add docker root in local
 sudo docker run -it --device /dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --rm --runtime nvidia  --network host container name
 ```
