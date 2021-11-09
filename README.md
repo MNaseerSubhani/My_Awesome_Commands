@@ -41,4 +41,5 @@ docker run -d image/name           # -d is for detach and run the container in b
 docker attach image/name           # attach container 
 docker rmi -f container-id         # delete container , -f is forced
 docker login
+docker tag image:template    image/tag
 ```
