@@ -42,4 +42,5 @@ docker attach image/name           # attach container
 docker rmi -f container-id         # delete container , -f is forced
 docker login
 docker tag image:template    image/tag
+docker push image/name
 ```
