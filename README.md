@@ -40,4 +40,5 @@ docker  run image/name: latest     #  version as container
 docker run -d image/name           # -d is for detach and run the container in background
 docker attach image/name           # attach container 
 docker rmi -f container-id         # delete container , -f is forced
+docker login
 ```
