@@ -43,4 +43,5 @@ docker rmi -f container-id         # delete container , -f is forced
 docker login
 docker tag image:template    image/tag
 docker push image/name
+docker system prune     # delete all stopped docker images
 ```
