@@ -30,7 +30,7 @@ sudo docker build -t "container name"
 xhost local:root      # to add docker root in local
 sudo docker run -it --device /dev/video0 -e DISPLAY=$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix:ro --rm --runtime nvidia  --network host container name
 ```
-#Docker commands
+# Docker commands
 ```
 docker build -t image/name .   # . is the current folder 
 docker run image/name
