@@ -13,6 +13,25 @@ cat file.txt | xargs -n 1 -d'\n' -I {} mv ./source/{} target/
  systemctl status service-name
  ```
 
+# split data from file name's .txt
+ ```
+cat file.txt | xargs -n 1 -d'\n' -I {} mv ./source/{} target/
+ ```
+ 
+ # check service status in ubuntu
+ ```
+ systemctl status service-name
+ ```
+
+# split data from file name's .txt
+ ```
+cat file.txt | xargs -n 1 -d'\n' -I {} mv ./source/{} target/
+ ```
+ 
+ # check service status in ubuntu
+ ```
+ systemctl status service-name
+ ```
 # For Documentatiomn
 ```
 sudo apt install python-sphinx -y
