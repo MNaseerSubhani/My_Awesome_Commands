@@ -53,3 +53,10 @@ docker push hub-image:tag
 ```
 # NoMachine for jetson
 [Jetson](https://www.nomachine.com/download/download&id=116&s=ARM)
+
+# Git 
+```
+before merge pull main branch
+
+
+```
