@@ -59,4 +59,12 @@ docker push hub-image:tag
 before merge pull main branch
 
 
+
+
+
+```
+# Display
+```
+xrandr --fb 1920x1080    # to focefully adjust the display resolution, without a monitor , ubuntu
+
 ```
