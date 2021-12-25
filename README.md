@@ -68,3 +68,24 @@ before merge pull main branch
 xrandr --fb 1920x1080    # to focefully adjust the display resolution, without a monitor , ubuntu
 
 ```
+# Port forward React with flask 
+```
+run npn eject 
+
+#In config/path.js change
+appBuild: resolveApp("../backend/static/react"),
+
+# in config/webpack.config.js remove "static/" and add
+new HtmlWebpackPlugin(
+    Object.assign(
+      {},
+      {
+       ...
+        filename : path.resolve("../backend/templates/index.html")
+      },
+      
+# in package.js add 
+...
+"private": true,
+"homepage": "/static/react",
+```
