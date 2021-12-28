@@ -89,3 +89,9 @@ new HtmlWebpackPlugin(
 "private": true,
 "homepage": "/static/react",
 ```
+
+
+```
+npm install # to install required packages
+npm run build   # to build the files
+```
