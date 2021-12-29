@@ -95,3 +95,11 @@ new HtmlWebpackPlugin(
 npm install # to install required packages
 npm run build   # to build the files
 ```
+
+
+# update Node js to latest version
+```
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+```
