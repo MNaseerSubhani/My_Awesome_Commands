@@ -100,6 +100,8 @@ npm run build   # to build the files
 # update Node js to latest version
 ```
 sudo npm cache clean -f
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash   # install vnm
+source ~/.nvm/nvm.sh
 command -v nvm
 nvm install 16.13.1
 ```
