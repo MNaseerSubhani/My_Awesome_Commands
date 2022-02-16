@@ -72,6 +72,21 @@ docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t username/
 #test the image
 docker buildx imagetools inspect username/demo:latest
 ```
+
+#### create a base image from host
+```
+$ sudo debootstrap focal focal > /dev/null
+$ sudo tar -C focal -c . | docker import - focal
+
+sha256:81ec9a55a92a5618161f68ae691d092bf14d700129093158297b3d01593f4ee3
+
+$ docker run focal cat /etc/lsb-release
+
+DISTRIB_ID=Ubuntu
+DISTRIB_RELEASE=20.04
+DISTRIB_CODENAME=focal
+DISTRIB_DESCRIPTION="Ubuntu 20.04 LTS"
+```
 # NoMachine for jetson
 [Jetson](https://www.nomachine.com/download/download&id=116&s=ARM)
 
