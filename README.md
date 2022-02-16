@@ -51,6 +51,18 @@ docker login
 docker tag local-image:tag  hub-image:tag
 docker push hub-image:tag
 ```
+#### Build and run multi-architecture images
+```
+docker buildx ls
+docker buildx create --name mybuilder
+
+docker buildx use mybuilder
+docker buildx inspect --bootstrap
+
+Test the workflow to ensure you can build, push, and run multi-architecture images. Create a simple example Dockerfile, build a couple of image variants, and push them to Docker Hub.
+
+The following example uses a single Dockerfile to build an Ubuntu image with cURL installed for multiple architectures.
+```
 # NoMachine for jetson
 [Jetson](https://www.nomachine.com/download/download&id=116&s=ARM)
 
