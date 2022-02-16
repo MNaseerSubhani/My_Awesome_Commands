@@ -59,9 +59,18 @@ docker buildx create --name mybuilder
 docker buildx use mybuilder
 docker buildx inspect --bootstrap
 
-Test the workflow to ensure you can build, push, and run multi-architecture images. Create a simple example Dockerfile, build a couple of image variants, and push them to Docker Hub.
+#Test the workflow to ensure you can build, push, and run multi-architecture images. Create a simple example Dockerfile, build a couple of image variants, and #push them to Docker Hub.
 
-The following example uses a single Dockerfile to build an Ubuntu image with cURL installed for multiple architectures.
+#The following example uses a single Dockerfile to build an Ubuntu image with cURL installed for multiple architectures.
+
+FROM ubuntu:20.04
+RUN apt-get update && apt-get install -y curl
+
+#build the docker
+docker buildx build --platform linux/amd64,linux/arm64,linux/arm/v7 -t username/demo:latest --push .
+
+#test the image
+docker buildx imagetools inspect username/demo:latest
 ```
 # NoMachine for jetson
 [Jetson](https://www.nomachine.com/download/download&id=116&s=ARM)
