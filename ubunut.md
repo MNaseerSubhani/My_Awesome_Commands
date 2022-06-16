@@ -4,3 +4,4 @@
 * Git and Github
 * GPU driver
 * Chrome
+* install tensorflow, cuda,cudnn,opencv
